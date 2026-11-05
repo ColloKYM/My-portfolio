@@ -1,42 +1,172 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-header{
+
+/*Header styles*/
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(36, 13, 156);
-    color: white;
+    background-color: wheat;
+    color: black;
     height: 60px;
     padding: 10px;
 }
-header > h1{
-    color: aqua;
+
+header>h1 {
+    color: black;
 }
+
 .text-logo {
     color: goldenrod;
 }
-nav > ul{
+
+nav>ul {
     display: flex;
 }
-nav > ul > li{
+
+nav>ul>li {
     margin: 15px;
     list-style: none;
 }
-nav > ul > li > a{
+
+nav>ul>li>a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
-nav > ul > li > a:hover{
+
+nav>ul>li>a:hover {
     color: goldenrod;
     margin: 5px;
 }
+
+/*Hero styles*/
 .hero {
-    background-image: url(images/bg.jpg);
+    background-image: linear-gradient(rgba(244, 176, 4, 0.502), rgb(0, 0, 0)), url(images/CP\ background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     height: 80vh;
     text-align: center;
-    padding: 6rem;
+    padding: 9rem;
+}
+
+.hero>h1 {
+    color: white;
+    font-size: 4rem;
+}
+
+.hero>p {
+    color: white;
+}
+
+.btn {
+    margin: 10px;
+    padding: 5px;
+    background-color: goldenrod;
+    border: none;
+    width: 90px;
+    border-radius: 10px;
+    color:black;
+    height: 35px;
+    cursor: pointer;
+
+}
+
+.btn-secondary {
+    margin: 10px;
+    padding: 5px;
+    background-color: aqua;
+    color: black;
+    border: none;
+    width: 90px;
+    border-radius: 10px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: aqua;
+    color: black;
+}
+
+.btn-secondary:hover {
+    background-color: goldenrod;
+    color: black;
+}
+
+.btn-container {
+    margin-top: 3rem;
+}
+
+/*About section centre*/
+.about {
+    background-color: rgba(0, 255, 255, 0.043);
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+section > h1 {
+    color: black;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p {
+    font-size: 18px;
+    color: black;
+}
+
+.left-container>span>ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.left-container>span>ul>li {
+    list-style: none;
+}
+
+.right-container>img {
+    height: 400px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+section {
+    text-align: center;
+    padding: 20px; 
+}
+
+/*Services section*/
+.services {
+    background-color: rgb(72, 66, 66);
+}
+.card {
+    border: 2px solid white;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px goldenrod;
+}
+.card > h2 {
+    font-size: 22px;
+    color: white;
+}
+.card > p {
+    font-size: 18px;
+    color: white;
+}
+
+.project-card {
+    border: 2px rgb(39, 33, 33);
 }
